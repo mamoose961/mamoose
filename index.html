@@ -33,6 +33,50 @@
     left: 50%;
     transform: translate(-50%,-65%);
   }
+      
+  h1{
+    font-family: impact;
+    font-weight: bolder;
+    color:#22344e;
+  }
+
+  .tracking-in-contract {
+	-webkit-animation: tracking-in-contract 2s cubic-bezier(0.600, 0.040, 0.980, 0.335) infinite reverse both;
+	        animation: tracking-in-contract 2s cubic-bezier(0.600, 0.040, 0.980, 0.335) infinite reverse both;
+  position: fixed;
+  z-index: 2;
+  bottom: 5%;
+  left: 50%;
+	font-size:8em;
+  transform: translate(-47.5%,0%);
+}
+
+      @-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
   </style>
 
   </head>
@@ -56,7 +100,7 @@
 <iframe src="https://github.com/anars/blank-audio/raw/master/250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
   <audio id="myAudio" autoplay loop>
   <source src="https://github.com/mamoose961/mamoose/raw/master/massage.mp3" type="audio/ogg">
-
 </audio>
+<h1 class="tracking-in-contract">MASSAGE</h1>
   </body>
 </html>
